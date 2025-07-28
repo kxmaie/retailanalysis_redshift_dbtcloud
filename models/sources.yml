@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: retail
+    database: dev
+    schema: retail
+    tables:
+      - name: dim_customers
+      - name: dim_employees
+      - name: dim_products
+      - name: dim_stores
+      - name: dim_time
+      - name: fact_inventory
+      - name: fact_sales
+
+
+
+    
+
+
