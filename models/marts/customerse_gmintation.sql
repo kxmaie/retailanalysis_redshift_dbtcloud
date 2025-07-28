@@ -2,7 +2,7 @@ WITH customer_sales AS (
    SELECT
        s.customer_id,
        sum(s.quantity_sold) AS total_purchases,
-       SUM(s.total_amount) AS total_spend
+       SUM(s.total_amount) AS total_spend 
    FROM {{ ref('stg_retail__fact_sales') }} s
    GROUP BY s.customer_id
 )
